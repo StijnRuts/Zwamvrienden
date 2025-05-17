@@ -18,15 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     margin: 0 0 2em 0;
-}
-header * {
-    vertical-align: middle;
+    text-align: center;
 }
 header img {
-    margin: 0 2em 0 0;
-}
-header h1 {
-    display: inline-block;
+    width: 300px;
 }
 
 th, td {
