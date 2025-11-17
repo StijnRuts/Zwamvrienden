@@ -12,18 +12,20 @@
 
 body {
     margin: 0 auto;
-    padding: 1em 2em;
-    max-width: 650px;
+    padding: 4em 2em;
+    max-width: 800px;
     font-size: 1.3em;
     line-height: 1.6;
 }
 
 * {
     font-family: system-ui, serif;
+    box-sizing: border-box;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
     line-height: 1.2;
+    margin-top: 2em;
 }
 
 header {
@@ -48,4 +50,93 @@ footer a {
 }
 footer img {
     width: 36px;
+}
+
+summary {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    padding: 0.2em 0.8em;
+    border-radius: 0.5em;
+    font-weight: bold;
+}
+details:open summary {
+    margin: 0 -1em 1em;
+    border-radius: 0;
+}
+details:open summary:focus {
+    outline: none;
+}
+details:open {
+    border: 5px solid blueviolet;
+    border-top: 0;
+    padding: 0 1em 1em;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+label {
+    cursor: pointer;
+}
+input {
+    font-size: 1.2rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+    width: 100%;
+    padding: 0.3em 0.4em;
+    border-radius: 0.2em;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    margin-bottom: 1em;
+    border: 1px solid grey;
+}
+input:required {
+    background-image: url("/images/star.svg");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 1.2em;
+}
+input:required:valid {
+    background-image: url("/images/check-light.svg");
+}
+input:required:not(:focus):valid {
+    border-color: forestgreen;
+}
+@media (prefers-color-scheme: dark) {
+    input:required:valid {
+        background-image: url("/images/check-dark.svg");
+    }
+    input:required:not(:focus):valid {
+        border-color: lightgreen;
+    }
+}
+input:required:user-invalid,
+input:required:invalid:not(:placeholder-shown) {
+    background-image: url('/images/cross.svg');
+}
+input:required:not(:focus):user-invalid,
+input:required:not(:focus):invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+fieldset {
+    margin-bottom: 1em;
+}
+fieldset.dates label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+}
+details p {
+    margin-top: 0;
+}
+input[type="submit"] {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border: 0;
 }
