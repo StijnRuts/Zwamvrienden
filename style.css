@@ -32,6 +32,7 @@ header {
 }
 header img {
     width: 300px;
+    max-width: 100%;
 }
 
 th, td {
