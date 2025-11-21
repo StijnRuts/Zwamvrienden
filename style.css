@@ -88,10 +88,6 @@ input[type="submit"] {
     width: 100%;
     padding: 0.3em 0.4em;
     border-radius: 0.2em;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
     margin-bottom: 1em;
     border: 1px solid grey;
 }
@@ -139,4 +135,11 @@ input[type="submit"] {
     background-color: blueviolet;
     color: white;
     border: 0;
+    margin-bottom: 0.3em;
+}
+.powered-by {
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 0.8em;
+    opacity: 0.5;
 }
