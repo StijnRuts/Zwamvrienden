@@ -1,0 +1,69 @@
+@use "pico" with (
+  $theme-color: "purple",
+  $enable-classes: true,
+  $enable-semantic-container: true,
+  $enable-responsive-typography: true,
+  $enable-responsive-spacings: true,
+
+  $modules: (
+    "themes/default": true,
+
+    // Layout
+    "layout/document": true,
+    "layout/landmarks": true,
+    "layout/container": true,
+    "layout/section": true,
+    "layout/grid": false,
+    "layout/overflow-auto": false,
+
+    // Content
+    "content/link": true,
+    "content/typography": true,
+    "content/embedded": true,
+    "content/button": true,
+    "content/table": false,
+    "content/code": false,
+    "content/figure": false,
+    "content/misc": true,
+
+    // Forms
+    "forms/basics": true,
+    "forms/checkbox-radio-switch": false,
+    "forms/input-color": false,
+    "forms/input-date": false,
+    "forms/input-file": false,
+    "forms/input-range": false,
+    "forms/input-search": false,
+
+    // Components
+    "components/accordion": true,
+    "components/card": true,
+    "components/dropdown": false,
+    "components/group": false,
+    "components/loading": false,
+    "components/modal": false,
+    "components/nav": true,
+    "components/progress": false,
+    "components/tooltip": false,
+
+    // Utilities
+    "utilities/accessibility": true,
+    "utilities/reduce-motion": true,
+  ),
+
+  $breakpoints: (
+    xsm: (
+      breakpoint: 400px,
+    ),
+    lg: (
+      viewport: 800px,
+    ),
+    xl: (
+      viewport: 800px,
+    ),
+    xxl: (
+      viewport: 800px,
+    ),
+  )
+);
+@use "overrides";

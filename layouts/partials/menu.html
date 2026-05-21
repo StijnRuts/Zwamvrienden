@@ -1,0 +1,14 @@
+{{ define "partials/inline/menu/walk.html" }}
+  <ul>
+    {{ range .menuEntries }}
+      {{ if $.page.IsMenuCurrent .Menu . }}
+        <li class="active" aria-current="page">{{ .Name }}</li>
+      {{ else }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+{{ end }}
+
+{{ partial "inline/menu/walk.html" (dict "page" .page "menuEntries" (index site.Menus .menuID)) }}
+

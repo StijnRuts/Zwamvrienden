@@ -1,0 +1,8 @@
+baseURL: https://zwamvrienden.be
+title: Zwamvrienden
+languageCode: nl
+disableKinds:
+  - rss
+  - section
+  - taxonomy
+  - term

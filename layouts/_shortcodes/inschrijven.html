@@ -1,0 +1,45 @@
+<details class="subscription">
+  <summary role="button">Inschrijven</summary>
+  <form method="post" action="https://forms.un-static.com/forms/87b7b51fc3e188b8e384e8735952e9d6e2e650b1">
+    <input
+      name="workshop"
+      type="hidden"
+      value="{{ .Get "name" }}"
+    />
+    <label>
+      Naam:
+      <input
+        name="name"
+        type="text"
+        autocomplete="name"
+        required
+        placeholder=""
+      />
+    </label>
+    <label>
+      Email:
+      <input
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+        placeholder=""
+      />
+    </label>
+    <label>
+      Telefoon:
+      <input
+        name="phone"
+        type="tel"
+        autocomplete="tel"
+        placeholder=""
+      />
+    </label>
+
+    <p><small>Wij contacteren je wanneer er voldoende inschrijvingen zijn.</small></p>
+
+    <input type="submit" value="Inschrijven">
+
+    <p class="powered-by"><small>(Powered by <a rel="nofollow" href="https://un-static.com">Un-static Forms</a>)</small></p>
+  </form>
+</details>
